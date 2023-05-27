@@ -1,0 +1,114 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("/css/photo.jpg");
+}
+
+.box{
+      color: white;
+      background-color: rgba(17, 25, 40, 0.75);
+      margin: 20px;
+      padding: 20px;
+      border: solid 1px rgba(255, 255, 255, 0.125);
+      border-radius: 12px;
+      align-self: center;
+      
+      box-shadow: 5px 5px 15px -5px black;
+      border-color: transparent;
+      backdrop-filter: blur(14px) saturation(70%);
+      
+    }
+    #heading{
+      padding:10px 90px 10px 90px ;
+    }
+   
+    input[type="text"]{
+    background: transparent;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    border: transparent;
+    font-size: medium;
+    margin-top: 20px;
+    border-bottom: #111 solid 0.1px;
+    
+    }
+    input[type="text"]:focus{
+      outline: none;
+      box-shadow:inset 0 -1px 0 0 black;
+    }
+    ::placeholder{
+      opacity: 0.7;
+    }
+    button {
+        min-height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: #23dabb;
+        color: white;
+        font-size: 20px;
+        padding-bottom: 6px;
+        border-width: 0;
+        }
+       
+    
+      input:checked+p{
+        text-decoration: line-through;
+        text-decoration-color: black;
+        text-decoration-thickness:0.3rem;
+        opacity: 1;
+        color: grey;
+      }
+      p{
+      font-size: 20px;
+      margin: 0;
+      font-weight: 200;
+      padding: 20px;
+      font-family: 'Source Sans Pro';
+      }
+      .item{
+        border-bottom: solid 0.00001em #6a696c;
+      }
+     .item:last-child{
+      border-bottom: 0;
+     }
+.text-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container h1{
+  font-family:'Raleway', sans-serif;
+  background-color: #000;;
+  margin: 0;
+  font-size: 150px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
